@@ -3,19 +3,19 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Data Preprocessing for Machine Learning with Python | Code with Love</title>
+    <title>Data Preprocessing with Python | Code with Love</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="Data preprocessing is one of the most critical step event before start thinking or using any machine learning models. A good data preprocessing can greatly improve the performence of the models. One a">
 <meta name="keywords" content="Machine Leaning,Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Data Preprocessing for Machine Learning with Python">
+<meta property="og:title" content="Data Preprocessing with Python">
 <meta property="og:url" content="https://github.com/jwlbjtu/jwlbjtu.github.io/2018/01/29/Data-Preprocessing/index.html">
 <meta property="og:site_name" content="Code with Love">
 <meta property="og:description" content="Data preprocessing is one of the most critical step event before start thinking or using any machine learning models. A good data preprocessing can greatly improve the performence of the models. One a">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-01-30T03:28:38.000Z">
+<meta property="og:updated_time" content="2018-01-30T03:38:15.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Data Preprocessing for Machine Learning with Python">
+<meta name="twitter:title" content="Data Preprocessing with Python">
 <meta name="twitter:description" content="Data preprocessing is one of the most critical step event before start thinking or using any machine learning models. A good data preprocessing can greatly improve the performence of the models. One a">
     
 
@@ -209,7 +209,7 @@
                 
     
         <h1 class="article-title" itemprop="name">
-            Data Preprocessing for Machine Learning with Python
+            Data Preprocessing with Python
         </h1>
     
 
@@ -426,7 +426,7 @@ y_test:
 [0 0]
 </code></pre><h2 id="Feature-Scaling"><a href="#Feature-Scaling" class="headerlink" title="Feature Scaling"></a>Feature Scaling</h2><p>Feature scaling is another must do step for most of the data preprocessing. What it dose is to scale the values in a dataset into a range of -1 ~ 1. To do this has two benefits, firt the computation time is shorter with small scale numbers. Second, is to avoid a certain feature dominate the result due to a bigger scale. For example, in our dataset there are Age and Salary features. The values of Salary are much bigger than Age, so during the training process Salary feature has a chance to dominate the result and make Age feature become useless. So by scale them into the same level, we can avoid this problem to happen.</p>
 <p>There are two main ways to scale the feature: Standardization and Normalization.</p>
-<p>Standardization: $$x’ = \frac{x - mean(X)}{sd(x)}$$</p>
+<p>Standardization: (sd -&gt; Standard Deviation) $$x’ = \frac{x - mean(x)}{sd(x)}$$</p>
 <p>Normalization : $$x’ = \frac{x - mean(x)}{max(x) - min(x)}$$</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Here I use Standardization</span></span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler</span><br><span class="line">sc_X = StandardScaler()</span><br><span class="line">X_train[:, <span class="number">3</span>:<span class="number">5</span>] = sc_X.fit_transform(X_train[:, <span class="number">3</span>:<span class="number">5</span>])</span><br><span class="line">X_test[:, <span class="number">3</span>:<span class="number">5</span>] = sc_X.transform(X_test[:, <span class="number">3</span>:<span class="number">5</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Print out X_train, X_test</span></span><br><span class="line">print(<span class="string">'X_train: '</span>)</span><br><span class="line">print(X_train)</span><br><span class="line">print()</span><br><span class="line">print(<span class="string">'X_test: '</span>)</span><br><span class="line">print(X_test)</span><br></pre></td></tr></table></figure>
 <pre><code>X_train: 
@@ -549,18 +549,38 @@ X_test:
     <div class="widget-wrap">
         <h3 class="widget-title">recent</h3>
         <div class="widget">
-            <ul id="recent-post" class="no-thumbnail">
+            <ul id="recent-post" class="">
                 
                     <li>
                         
+                        <div class="item-thumbnail">
+                            <a href="/2018/01/29/Data-Preprocessing/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Machine-Learning/">Machine Learning</a></p>
-                            <p class="item-title"><a href="/2018/01/29/Data-Preprocessing/" class="title">Data Preprocessing for Machine Learning with Python</a></p>
+                            <p class="item-title"><a href="/2018/01/29/Data-Preprocessing/" class="title">Data Preprocessing with Python</a></p>
                             <p class="item-date"><time datetime="2018-01-30T02:50:41.000Z" itemprop="datePublished">2018-01-29</time></p>
                         </div>
                     </li>
                 
                     <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/01/13/Get-back-on-blogging/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Life/">Life</a></p>
