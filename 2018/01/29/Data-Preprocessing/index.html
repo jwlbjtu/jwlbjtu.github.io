@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Code with Love">
 <meta property="og:description" content="Data preprocessing is one of the most critical step event before start thinking or using any machine learning models. A good data preprocessing can greatly improve the performence of the models. One a">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-01-30T03:11:22.000Z">
+<meta property="og:updated_time" content="2018-01-30T03:23:13.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Data Preprocessing for Machine Learning with Python">
 <meta name="twitter:description" content="Data preprocessing is one of the most critical step event before start thinking or using any machine learning models. A good data preprocessing can greatly improve the performence of the models. One a">
@@ -262,6 +262,40 @@
 <li><strong><a href="http://scikit-learn.org/stable/" target="_blank" rel="noopener">sklearn</a></strong> is another libaray we will use later. It is a very powerful tool for data analysis. Due to its comprehensive tools we will introduce them indivdualy once we use them. </li>
 </ul>
 <h2 id="Import-the-dataset"><a href="#Import-the-dataset" class="headerlink" title="Import the dataset"></a>Import the dataset</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># read a csv file by pandas</span></span><br><span class="line">dataset = pd.read_csv(<span class="string">'Data.csv'</span>)</span><br><span class="line"><span class="comment"># print out the loaded dataset</span></span><br><span class="line">dataset</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">Country</th>
+<th style="text-align:center">Age</th>
+<th style="text-align:center">Salary</th>
+<th style="text-align:right">Purchased</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td style="text-align:center">France</td>
+<td style="text-align:center">44.0</td>
+<td style="text-align:center">72000.0</td>
+<td style="text-align:right">No</td>
+</tr>
+<tr>
+<td>1</td>
+<td style="text-align:center">Spain</td>
+<td style="text-align:center">27.0</td>
+<td style="text-align:center">48000.0</td>
+<td style="text-align:right">Yes</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align:center">Germany</td>
+<td style="text-align:center">30.0</td>
+<td style="text-align:center">54000.0</td>
+<td style="text-align:right">No</td>
+</tr>
+</tbody>
+</table>
 <div><br><style><br>    .dataframe thead tr:only-child th {<br>        text-align: right;<br>    }<br><br>    .dataframe thead th {<br>        text-align: left;<br>    }<br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br></style><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>Country</th><br>      <th>Age</th><br>      <th>Salary</th><br>      <th>Purchased</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>France</td><br>      <td>44.0</td><br>      <td>72000.0</td><br>      <td>No</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>Spain</td><br>      <td>27.0</td><br>      <td>48000.0</td><br>      <td>Yes</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>Germany</td><br>      <td>30.0</td><br>      <td>54000.0</td><br>      <td>No</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>Spain</td><br>      <td>38.0</td><br>      <td>61000.0</td><br>      <td>No</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>Germany</td><br>      <td>40.0</td><br>      <td>NaN</td><br>      <td>Yes</td><br>    </tr><br>    <tr><br>      <th>5</th><br>      <td>France</td><br>      <td>35.0</td><br>      <td>58000.0</td><br>      <td>Yes</td><br>    </tr><br>    <tr><br>      <th>6</th><br>      <td>Spain</td><br>      <td>NaN</td><br>      <td>52000.0</td><br>      <td>No</td><br>    </tr><br>    <tr><br>      <th>7</th><br>      <td>France</td><br>      <td>48.0</td><br>      <td>79000.0</td><br>      <td>Yes</td><br>    </tr><br>    <tr><br>      <th>8</th><br>      <td>Germany</td><br>      <td>50.0</td><br>      <td>83000.0</td><br>      <td>No</td><br>    </tr><br>    <tr><br>      <th>9</th><br>      <td>France</td><br>      <td>37.0</td><br>      <td>67000.0</td><br>      <td>Yes</td><br>    </tr><br>  </tbody><br></table><br></div>
 
 
