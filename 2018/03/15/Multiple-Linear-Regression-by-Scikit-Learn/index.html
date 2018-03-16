@@ -5,18 +5,18 @@
     
     <title>Multiple Linear Regression by Scikit-Learn | Code with Love</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Multiple Linear Regression IntuitionMultiple Linear Regression presents linear relationship between mutiple independent variables and dependent variable.  Formula: $$y = b_0 + b_1  X_1 + … + b_n  X_n$">
+    <meta name="description" content="Multiple Linear Regression IntuitionMultiple Linear Regression presents linear relationship between mutiple independent variables and dependent variable.  Formula: $$y = b_0 + b_1 * X_1 + … + b_n * X_">
 <meta name="keywords" content="Machine Learning,Python,Scikit-Learn">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Multiple Linear Regression by Scikit-Learn">
 <meta property="og:url" content="https://jwlbjtu.github.io/2018/03/15/Multiple-Linear-Regression-by-Scikit-Learn/index.html">
 <meta property="og:site_name" content="Code with Love">
-<meta property="og:description" content="Multiple Linear Regression IntuitionMultiple Linear Regression presents linear relationship between mutiple independent variables and dependent variable.  Formula: $$y = b_0 + b_1  X_1 + … + b_n  X_n$">
+<meta property="og:description" content="Multiple Linear Regression IntuitionMultiple Linear Regression presents linear relationship between mutiple independent variables and dependent variable.  Formula: $$y = b_0 + b_1 * X_1 + … + b_n * X_">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-03-16T03:40:40.000Z">
+<meta property="og:updated_time" content="2018-03-16T03:53:22.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Multiple Linear Regression by Scikit-Learn">
-<meta name="twitter:description" content="Multiple Linear Regression IntuitionMultiple Linear Regression presents linear relationship between mutiple independent variables and dependent variable.  Formula: $$y = b_0 + b_1  X_1 + … + b_n  X_n$">
+<meta name="twitter:description" content="Multiple Linear Regression IntuitionMultiple Linear Regression presents linear relationship between mutiple independent variables and dependent variable.  Formula: $$y = b_0 + b_1 * X_1 + … + b_n * X_">
     
 
     
@@ -245,7 +245,7 @@
         
             
             <h3 id="Multiple-Linear-Regression-Intuition"><a href="#Multiple-Linear-Regression-Intuition" class="headerlink" title="Multiple Linear Regression Intuition"></a>Multiple Linear Regression Intuition</h3><p><strong>Multiple Linear Regression</strong> presents linear relationship between mutiple independent variables and dependent variable. </p>
-<p><strong>Formula</strong>: $$y = b_0 + b_1 <em> X_1 + … + b_n </em> X_n$$<br><a id="more"></a></p>
+<p><strong>Formula</strong>: $$y = b_0 + b_1 * X_1 + … + b_n * X_n$$<br><a id="more"></a></p>
 <h3 id="Multiple-Linear-Regression-Implementaion"><a href="#Multiple-Linear-Regression-Implementaion" class="headerlink" title="Multiple Linear Regression Implementaion"></a>Multiple Linear Regression Implementaion</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Importing the libaraies</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment"># Importing the dataset</span></span><br><span class="line">dataset = pd.read_csv(<span class="string">'50_Startups.csv'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># show dataset</span></span><br><span class="line">dataset</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
